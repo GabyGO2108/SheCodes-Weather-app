@@ -12,10 +12,18 @@ body {
      #ace0f9 100%
   );
 }
+
+ul {
+  margin: 0;
+  padding: 0;
+}
 li {
   list-style: none;
   line-height: 19px;
   font-weight: 100;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 0;
 }
 
 h1 {
@@ -51,8 +59,8 @@ h5 {
   font-size: 22px;
 }
 
-h5 {
-  text-align: left;
+h6 {
+  text-align: center;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 22px;
 }
