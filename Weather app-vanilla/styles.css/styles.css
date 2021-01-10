@@ -12,6 +12,11 @@ body {
      #ace0f9 100%
   );
 }
+li {
+  list-style: none;
+  line-height: 19px;
+  font-weight: 100;
+}
 
 h1 {
   text-align: center;
