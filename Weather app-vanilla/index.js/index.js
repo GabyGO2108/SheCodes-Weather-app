@@ -159,7 +159,7 @@ alt=""
   }
 }
 
-function getCurrentPosition() {
+function getCurrentPosition(event) {
   event.preventDefault();
   navigator.geolocation.getCurrentPosition(showPosition);
 }
