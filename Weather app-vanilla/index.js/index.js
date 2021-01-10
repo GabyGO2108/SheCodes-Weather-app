@@ -129,7 +129,7 @@ function displayForecast(response) {
   for (let index = 0; index < 5; index++) {
     let forecasttemperature = response.data.list[index];
     forecastElement.innerHTML = `
-<div class="container">
+<div class="col-2">
 
 
 
