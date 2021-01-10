@@ -24,6 +24,20 @@ let months = [
   "Dec"
 ];
 
+function formatHours(timestamp) {
+  let date = new Date(timestamp);
+  let hours = date.getHours();
+  if (hours < 10) {
+    hours = `0${hours}`;
+  }
+  let minutes = date.getMinutes();
+  if (minutes < 10) {
+    minutes = `0${minutes}`;
+  }
+
+  return `${hours}:${minutes}`;
+}
+
 let root = "https://api.openweathermap.org";
 let apiKey = "49851ccf9dc7b43010c95070e54f87e8";
 
@@ -65,9 +79,7 @@ fahrenheitLink.addEventListener("click", convertToFahrenheit);
 let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", convertToCelsius);
 
-function formatHours(timestamp) {
-  return `${hours}:${minutes}`;
-}
+
 
 function currenttemp(response) {
   let temperatureElement = document.querySelector("#temperature");
