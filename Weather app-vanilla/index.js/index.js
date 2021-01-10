@@ -126,7 +126,7 @@ function displayForecast(response) {
   forecastElement.innerHTML = null;
   let forecasttemperaure = null;
 
-  for (let index = 0; index < 6; index++) {
+  for (let index = 0; index < 5; index++) {
     let forecasttemperature = response.data.list[index];
     forecastElement.innerHTML = `
 <div class="container">
