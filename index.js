@@ -87,7 +87,7 @@ function currenttemp(response) {
   celsiustemp = response.data.main.temp;
 
   let temperature = Math.round(celsiustemp);
-   let descriptionElement = document.querySelector("#description");
+  let descriptionElement = document.querySelector("#description");
   descriptionElement.innerHTML = response.data.weather[0].description;
 
   document.querySelector("#city").innerHTML = response.data.name;
